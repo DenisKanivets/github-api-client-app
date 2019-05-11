@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    font-family: Monseratt, sans-serif;
+}
+
+/*header styles*/
+header {
+    height: 65px;
+    background: #24292e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-github {
+    color: white;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+#searchSection {
+    margin-right: 100px;
+}
+
+#inputName {
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 330px;
+    padding-left: 10px;
+    font-size: 16px;
+    transition: all 0.5s linear;
+    margin-right: 10px;
+}
+
+#inputName:focus {
+    width: 500px;
+}
+
+.main-btn {
+    background: #31c553;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    width: 100px;
+    line-height: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+}
+
+.main-btn:hover {
+    background: #FFF;
+    border: 1px solid #31c553;
+    color: #31c553;
+    box-shadow: 0 0 10px #31c553;
+}
+
+/*user info style*/
+#userContent {
+    display: flex;
+    align-items: center;
+    background: #fafbfc;
+}
+
+img {
+    margin: 10px 100px;
+    border-radius: 5px;
+    height: 100px;
+    width: auto;
+}
+
+.login {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/*sort and filter style*/
+.sort-filter {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#filterSection {
+    display: none;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sort-filter-info {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.apply {
+    background: #1776dd;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    width: 60px;
+    line-height: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+}
+
+.apply:hover {
+    background: #FFF;
+    border: 1px solid #1776dd;
+    color: #1776dd;
+    box-shadow: 0 0 10px #1776dd;
+}
+
+#sortSection {
+    display: none;
+}
+
+.sort-block {
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.order-btn-repos {
+    background: #1776dd;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    width: 50px;
+    line-height: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+}
+
+.order-btn-repos:hover {
+    background: #FFF;
+    border: 1px solid #1776dd;
+    color: #1776dd;
+    box-shadow: 0 0 10px #1776dd;
+}
+
+.order-btn-stars {
+    background: #1776dd;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    width: 100px;
+    line-height: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+}
+
+.order-btn-stars:hover {
+    background: #FFF;
+    border: 1px solid #1776dd;
+    color: #1776dd;
+    box-shadow: 0 0 10px #1776dd;
+}
+
+/*repositories cards style*/
+.card {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 0 100px;
+    padding: 20px;
+}
+
+.reposName {
+    color: #1776dd;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description {
+    color: darkgray;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.fa-star {
+    margin-left: 150px;
+}
+
+.stars {
+    margin-left: 5px;
+    color: darkgray;
+}
+
+.date {
+    margin: 0 150px;
+}
+
+/*button load more style*/
+#btnMore {
+    margin: 30px auto;
+}
+
+/*error message style*/
+.err-mess {
+    text-align: center;
+    margin: 50px;
+    font-size: 24px;
+    font-weight: 700;
+}

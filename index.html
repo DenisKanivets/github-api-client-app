@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub API Client App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+        <i class="fab fa-github"></i>
+        <form id="searchSection">
+            <input type="text" id="inputName" name="userName" placeholder="Enter owner (organization or user) name...">
+            <input type="submit" class="main-btn" value="Search">
+        </form>
+    </header>
+
+    <div id="userContent"></div>
+
+    <div class="sort-filter">
+        <form id="filterSection">
+            <span class="sort-filter-info">Type: </span>
+            <select name="type" id="selectType">
+                <option value="all">All</option>
+                <option value="forks">Forks</option>
+                <option value="sources">Sources</option>
+            </select>
+            <span class="sort-filter-info">Starred: </span>
+            <select name="starred" id="selectStars">
+                <option value="all">All</option>
+                <option value="moreFive">>5 stars</option>
+                <option value="moreTwenty">>20 stars</option>
+            </select>
+            <input class="apply" type="submit" value="Apply">
+        </form>
+
+        <div id="sortSection">
+            <div class="sort-block">
+                <span class="sort-filter-info">Sort by Repositories Name:</span>
+                <button class="order-btn-repos" id="AZReposOrder">&#8593; A-Z</button>
+                <button class="order-btn-repos" id="ZAReposOrder">&#x2193; Z-A</button>
+            </div>
+            <div class="sort-block">
+                <span class="sort-filter-info">Sort by Stars Count:</span>
+                <button class="order-btn-stars" id="leastStarsOrder">&#8593; Least stars</button>
+                <button class="order-btn-stars" id="mostStarsOrder">&#x2193; Most stars</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="content"></div>
+
+    <button class="main-btn" style="display: none" id="btnMore">Load More</button>
+
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
